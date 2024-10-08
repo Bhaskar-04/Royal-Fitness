@@ -1,0 +1,44 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 20rem;
+    height: 10rem;
+    margin-top: -1rem;
+    margin-left: -2rem;
+}
+
+.header-menu{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    color: white;
+}
+
+.header-menu>li:hover{
+    cursor: pointer;
+    color: var(--orange);
+}
+
+@media screen and (max-width: 768px) {
+    .logo{
+        transform: scale(0.7);
+        left: 0;
+        top: 0;
+    }
+
+    .header-menu{
+        flex-direction: column;
+        background-color: var(--appColor);
+        position: fixed;
+        z-index: 10;
+        right: 1rem;
+        padding: 2rem;
+        top: 0.5rem;
+    }
+}
+
+
